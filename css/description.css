@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.back-button {
+  background-color: #ffebcd;
+  border: none;
+  color: #d2691e;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #ffcc99;
+}
+
+#product-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 60px; /* Отступ сверху, чтобы не перекрывать кнопку */
+}
+
+.product-image-container {
+  flex: 1;
+  max-width: 500px;
+  margin-right: 20px;
+}
+
+.product {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.product-details {
+  flex: 2;
+  max-width: 600px;
+}
+
+.product-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: #ffebcd;
+  border: none;
+  color: #d2691e;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffcc99;
+}
+
+.fullscreen-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fullscreen-image {
+  max-width: 90%;
+  max-height: 90%;
+  margin-bottom: 20px;
+}
+
+.close-fullscreen {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-fullscreen:hover {
+  background-color: #ff4f40;
+}
+
+@media (max-width: 768px) {
+  #product-info {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .product-details h2 {
+      font-size: 20px;
+  }
+
+  .product-details p {
+      font-size: 14px;
+  }
+
+  button {
+      font-size: 14px;
+      padding: 8px 15px;
+  }
+
+  .buttons {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-details h2 {
+      font-size: 18px;
+  }
+
+  .product-details p {
+      font-size: 12px;
+  }
+
+  button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+}

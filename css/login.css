@@ -1,0 +1,132 @@
+/* login.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #ffe0b2, #ffd180);
+}
+
+#page-container {
+    position: relative;
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.loogin {
+    padding: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form.active {
+    display: block;
+}
+
+.form p {
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.main-input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    background: transparent;
+}
+
+.hignlight-span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffe0b2;
+    transition: 0.3s;
+}
+
+.main-input:focus ~ .hignlight-span {
+    width: 100%;
+}
+
+.lebal-email {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.main-input:focus ~ .lebal-email,
+.main-input:valid ~ .lebal-email {
+    top: -18px;
+    font-size: 12px;
+    color: #e09d56;
+}
+
+.submit {
+    background-color: #be8242;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #ffe0b2;
+}
+
+.registracia {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .registracia button {
+    background-color: #ffe0b2;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .registracia button:hover {
+    background-color: #ffe0b2;
+  }

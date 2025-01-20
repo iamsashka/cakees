@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="polozenie_menushki">
+                <div class="menushka">
+                    <button onclick="window.location.hash='#intro'">Home</button>
+                    <button onclick="window.location.href='../html/catalog.html'">Catalog</button>
+                    <button onclick="window.location.href='../html/favorite.html'">Favorite</button>
+                    <button onclick="window.location.href='../html/cart.html'">Cart</button>
+                    <button onclick="window.location.href='../html/login.html'">Authorization</button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>This site was created for practical exams at my educational institution.
+                 This is not a real online store</p>
+            <a href="catalog.html" class="btn">Shop Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="../img/hero-image.jpg" alt="Hero Image">
+        </div>
+    </section>
+    
+    <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature-items">
+            <div class="feature-item">
+                <img src="../img/Feature2.jpg" alt="Feature 1">
+                <h3>Feature 1</h3>
+                <p>Description of Feature 1</p>
+            </div>
+            <div class="feature-item">
+                <img src="../img/Feature1.jpg" alt="Feature 2">
+                <h3>Feature 2</h3>
+                <p>Description of Feature 2</p>
+            </div>
+            <div class="feature-item">
+                <img src="../img/Feature3.jpg" alt="Feature 3">
+                <h3>Feature 3</h3>
+                <p>Description of Feature 3</p>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section id="intro">
+            <h1>Welcome to our website!</h1>
+            <p>This is a brief introduction to our website.</p>
+            
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Our Website. All Rights Reserved.</p>
+        <p>Made by <a href="#">Alexandra</a></p>
+    </footer>
+</body>
+</html>

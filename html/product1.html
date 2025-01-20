@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/description.css">
+    <title>Продукт 1</title>
+</head>
+<body>
+    <button onclick="window.location.href='../index.html'" class="back-button">
+        <span class="arrow">⬅</span> Home
+      </button>
+    <section id="product-info">
+        <div class="product-image-container">
+            <img class="product" src="../img/product1.jpg" alt="Product 1" data-fullscreen-src="../img/product1_large.jpg">
+        </div>
+        <div class="product-details">
+            <h2>Торт "Камелия"</h2>
+            <p><b>Начинка:</b> нежный бисквитный корж, пропитанный клубничным сиропом,<br>
+                с нежным кремом на основе сливочного сыра и кусочками сочной клубники.</p>
+            <p><b>Алергенны:</b> пшеница, молоко, яйца, клубника.</p>
+            <p><b>Вес изделия:</b> 500гр.</p>
+            <p><h3>Цена:</h3>2 699 р</p>
+            <div class="buttons">
+                <button class="favorite-button">Избранное ❤</button>
+                <button class="add-to-cart-button">Добавить в корзину 🛒</button>
+            </div>
+        </div>
+    </section>
+    <div class="fullscreen-container" style="display: none;">
+        <img src="" alt="" class="fullscreen-image">
+        <button class="close-fullscreen">Закрыть</button>
+    </div>
+    <script src="../js_modules/description.js"></script>
+</body>
+</html>
